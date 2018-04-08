@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 import {
     Navigator
-} from 'react-native'
+} from 'react-native';
 
-import WelcomePage from './WelcomePage'
+import WelcomePage from './WelcomePage';
 
 function setup() {
 
@@ -13,14 +13,14 @@ function setup() {
         
         renderScene(route, navigator) {
             let Component = route.component;
-            return <Component {...route.params} navigator={navigator}></Component>
+            return <Component {...route.params} navigator={navigator}></Component>;
         }
 
         render() {
             return <Navigator
                 initialRoute = {{component: WelcomePage}}
                 renderScene = {(route, navigator)=>this.renderScene(route, navigator)} 
-                />
+                />;
         }
     }
     return <Root/>;

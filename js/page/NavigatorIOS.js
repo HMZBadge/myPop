@@ -26,7 +26,7 @@ export default class NavigatorIOSApp extends Component {
 
 class MyScene extends Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     navigator: PropTypes.object.isRequired,
   }
 

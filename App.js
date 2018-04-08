@@ -25,7 +25,7 @@ class MyScene extends Component {
   constructor(props, context) {
     super(props, context);
     this._onForward = this._onForward.bind(this);
-    this._onBack = this._onBack(this);
+    this._onBack = this._onBack.bind(this);
   }
 
   _onForward() {
